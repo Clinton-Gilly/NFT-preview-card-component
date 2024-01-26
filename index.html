@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | NFT preview card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        padding-left: 10px;
+        background-color: rgb(14, 14, 21);
+        color: #ffffff;
+        
+      }
+      img {
+        position: relative;
+        height: 70%;
+        width: 70%;
+        padding-left: 10px;
+        padding-top: 10px;
+        border-radius: 5%;
+        
+        
+      }
+      p.main {
+        color: #ffffff;
+      }
+      .cover-box {
+        margin-top: 20px;
+        position: relative;
+        overflow: hidden;
+        width: 25%;
+        height: 120%;
+        padding-left: 20px;
+        border-radius: 5%;
+      }
+
+      .cover-box:before {
+        margin-top: 20px;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 120%;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 1%;
+      }
+
+      .content {
+        position: relative;
+        z-index: 1;
+        color: #fff;
+      }
+      
+      
+
+      .icon {
+        display: flex;
+        gap: 100px;
+      }
+
+      .days-left,
+      .eth-amount {
+        position: absolute;
+        bottom: 1px;
+        color: #fff;
+        font-size: 14px;
+      }
+
+      .days-left {
+        right: 520px;
+      }
+
+      .eth-amount {
+        left: 20px;
+      }
+      .user {
+        display: flex;
+        align-items: center;
+      }
+
+      .user img {
+        max-width: 10%; /* Set the maximum width to ensure it stays within the box */
+        height: auto; /* Maintain aspect ratio */
+      }
+      .user p {
+        color: #ffffff;
+        font-size: 14px;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 700px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="cover-box">
+      <div class="content">
+       
+          <img src="images/image-equilibrium.jpg" alt="" /> <br />
+          <h2>Equilibrium #3429</h2>
+          <p class="main">
+            Our Equilibrium collection promotes <br />
+            balance and calm.
+          </p>
+          <div class="icon">
+            <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
+                fill="#00FFF8"
+              />
+            </svg>
+            <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
+                fill="#8BACD9"
+              />
+            </svg>
+          </div>
+          <span class="days-left">3 days left</span>
+          <span class="eth-amount">0.041 ETH</span>
+        </div>
+        <br>
+        <div class="user">
+          <img src="images/image-avatar.png" alt="" />
+          <p >Creation of Jules Wyvern</p>
+        </div>
+      </div>
+   
+
+      
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://wa.me/254715329007">Clinton Gilly</a>.
+    </div>
+    
+  </body>
+</html>
